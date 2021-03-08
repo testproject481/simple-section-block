@@ -34,15 +34,16 @@ add_action( 'enqueue_block_assets', function( $hook ){
 
 // Block contents
 function crb_attach_plugin_options() {
-    Block::make( __( 'Simple Section Block Options', 'simple-section-block' ) )
-        // ->set_description( __( 'A Simple Section Block Options', 'simple-section-block' ) )
-        // ->set_category( 'simple_section', _( 'Simple Section Block', 'admin-media' ) )
-        // ->set_keywords( [ __( 'simple section', 'gutenberg block' ) ] )
+    Block::make( __( 'Simple Section Block', 'simple-section-block' ) )
+        ->set_description( __( 'A Simple Section Block Options', 'simple-section-block' ) )
+        ->set_category( 'simple_section', __( 'Simple Section Areas', 'simple-section-block' ), 'index-card' )
+        ->set_icon( 'index-card' )
+        ->set_keywords( [ __( 'simple section', 'simple-section-block' ),  __( 'gutenberg block', 'simple-section-block' ),  __( 'simple gutenberg block', 'simple-section-block' ) ] )
         ->add_fields( 
             [
                 // Left Contents
                 Field::make( 'separator', 'simple_block_left_section', __( 'Left Contents', 'simple-section-block' ) ),
-                Field::make( 'image', 'simple_block_top_icon', __( 'Upload The Icon Image', 'simple-section-block' ) ),
+                Field::make( 'image', 'simple_block_top_icon', __( 'Upload The Icon Image, please upload the square size icon. Best size: 54X54px', 'simple-section-block' ) ),
                 Field::make( 'text', 'simple_block_sec_title', __( 'Section Title', 'simple-section-block' ) ),
                 Field::make( 'textarea', 'simple_block_short_text', __( 'Short Brief', 'simple-section-block' ) ),
                 Field::make( 'text', 'simple_block_btn_text', __( 'Button Text', 'simple-section-block' ) ),
