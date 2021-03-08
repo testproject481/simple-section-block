@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.simple-section-block {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 0;
+}
+.simple-section-block .left-content {
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+    padding-top: 100px;
+}
+.simple-section-block .right-content {
+    width: 50%;
+    float: left;
+}
+.simple-section-block img {
+    max-width: 100%;
+    height: auto;
+}
+.simple-section-block .block-image > img {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.simple-section-block .block-header > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 58px;
+    letter-spacing: -2px;
+    color: #297FCA;
+}
+.simple-section-block .block-description > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #297FCA;
+}
+.simple-section-block .block-button > a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #fff;
+    background: #3FA2F7;
+    width: 213px;
+    height: 60px;
+    padding: 22px 0 22px 65px;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    transition: all .3s ease;
+    margin-top: 30px;
+}
+.simple-section-block .block-button > a.no-icon {
+    text-align: center;
+    padding: 22px;
+}
+.simple-section-block .block-button > a:hover {
+    opacity: .9;
+}
+.simple-section-block .block-button > a.show-icon::before {
+    content: '';
+    background: url(../image/star-icon.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+.simple-section-block .right-content .block-image {
+    text-align: center;
+}
+.simple-section-block .right-content .block-image > img {
+    padding: 15% 0 0;
+    max-width: 75%;
+    display: inline-block;
+    margin-bottom: -50px;
+}
+
+
+/* Old phone screen */
+@media (min-width: 320px) and (max-width: 575px) {
+    .simple-section-block {
+        width: 300px;
+    }
+    .simple-section-block {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .simple-section-block .left-content {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 50px 0;
+    }
+    .simple-section-block .block-button > a {
+        display: inline-block;
+    }
+    .simple-section-block .right-content {
+        width: 100%;
+    }
+    .simple-section-block .right-content .block-image > img {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Mobile screen */
+@media (min-width: 576px) {
+    .simple-section-block {
+        width: 540px;
+    }
+}
+
+/* Tab screen */
+@media (min-width: 768px) {
+    .simple-section-block {
+        width: 720px;
+    }
+    .simple-section-block .left-content {
+        padding-top: 0;
+    }
+    .simple-section-block .right-content .block-image > img {
+        padding: 15% 0 0;
+        max-width: 90%;
+    }
+}
+
+/* Small screen */
+@media (min-width: 992px) {
+    .simple-section-block {
+        width: 960px;
+    }
+}
+
+/* Big screen */
+@media (min-width: 1200px) {
+    .simple-section-block {
+        width: 1140px;
+    }
+}
