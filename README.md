@@ -2,7 +2,7 @@
 
 **Simple Section Block** is a simple wordpress plugin that will make a Gutenberg Block with the category name 'Simple Section Area'. You can find only one block there too by the name 'Simple Section Block'. Easily can make an awesome section by fillup the fields.
 
-As this Gutenberg block made by a plugin that's why I didn't share the entire wordpress all files to make this huge. You can simply check the demo here https://totthoprojukti.com/text-with-image/text-with-image/
+As this Gutenberg block made by a plugin that's why I didn't share the entire wordpress all files to make this huge. You can simply check the demo here https://totthoprojukti.com/text-with-image/demo/
 
 Login details are given below:
 https://totthoprojukti.com/text-with-image/wp-login.php
