@@ -32,6 +32,9 @@ add_action( 'enqueue_block_assets', function( $hook ){
     );
 } );
 
+// Right thumb size
+add_image_size( 'block_right_thumb_420x500', 420, 500, true );
+
 // Block contents
 function crb_attach_plugin_options() {
     Block::make( __( 'Simple Section Block', 'simple-section-block' ) )
@@ -97,7 +100,7 @@ function crb_attach_plugin_options() {
                     <div class="block-image">
                         <?php
                             if ( !empty($fields['simple_block_right_image']) ) {
-                                echo wp_get_attachment_image( $fields['simple_block_right_image'], 'full' );
+                                echo wp_get_attachment_image( $fields['simple_block_right_image'], 'block_right_thumb_420x500', '', ['alt' => 'simple section block right image'] );
                             }
                         ?>
                     </div>
