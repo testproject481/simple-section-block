@@ -99,6 +99,7 @@
     }
     .simple-section-block .block-button > a {
         display: inline-block;
+        padding-right: 30px;
     }
     .simple-section-block .right-content {
         width: 100%;
@@ -135,11 +136,17 @@
     .simple-section-block {
         width: 960px;
     }
+    .simple-section-block .left-content {
+        padding-top: 100px;
+    }
 }
 
 /* Big screen */
 @media (min-width: 1200px) {
     .simple-section-block {
         width: 1140px;
+    }
+    .simple-section-block .left-content {
+        padding-top: 100px;
     }
 }
